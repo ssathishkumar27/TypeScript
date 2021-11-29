@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            online course enrollment
+        </title>
+        <link rel="stylesheet" href="styles/onlinecourse.css">
+        <script src="scripts/onlinecourse.js"></script>
+    </head>
+    <body>
+        <h1>WELCOME TOONLINE COURSE ENROLLMENT</h1><br>
+        <div id ="maindiv">
+            <button onclick="adduser()">Add user</button>
+            <button onclick="userlogin()">Login</button>
+        </div><br><br>
+
+        <div id="newuserdiv">
+            <label for="">Username: </label>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+            <label for="">Age: </label>
+            <input type="number" id="age" placeholder="Enter your age"><br><br>
+            <label for="">Mobile Number: </label>
+            <input type="text" id="mobilenumber" placeholder="Enter your mobile number"><br><br>
+            <button onclick="newuser()">Add...</button>
+        </div><br><br>
+
+        <div id="logindiv">
+            <label for="">UserId: </label>
+            <input type="text" id="userid" placeholder="Enter your user ID"><br><br>
+            <button onclick="validateuser()">login</button>
+        </div><br><br>
+
+        <div id="optiondiv">
+            <button onclick="courseenrolldiv()">Available Courses</button>
+            <button onclick="coursedetailsdiv()">Enrolled Courses</button>
+        </div><br><br>
+
+        <div id="courseenrolldiv">
+            <label for="">Courses: </label>
+            <select name="" id="courses">
+                <option value="">C SHARP</option>
+                <option value="">HTML & CSS</option>
+                <option value="">JAVASCRIPT</option>
+                <option value="">TYPESCRIPT</option>
+            </select><br><br>
+            <label for="">Required days: </label>
+            <input type="number" id="days" placeholder="Enter required days"><br><br>
+            <button onclick="enrolledcourse()">Enroll</button>
+        </div><br><br>
+
+        <div id="coursedetailsdiv">
+            <label for="">Courses: </label><label for="" id="courseslist"></label><br><br>
+            <label for="">Totals days: </label><label for="" id="dayscount"></label><br>
+        </div>
+    </body>
+</html>

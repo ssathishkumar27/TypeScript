@@ -1,0 +1,25 @@
+#maindiv{
+    display:block;
+}
+#newuserdiv
+{
+    display:none;
+}
+#logindiv{
+    display:none;
+}
+#optiondiv{
+    display:none;
+}
+#courseenrolldiv{
+    display:none;
+}
+#coursedetailsdiv{
+    display:none;
+}body{
+    background-color: antiquewhite;
+}
+button{
+    background-color: orangered;
+    border-color: orangered;
+}
